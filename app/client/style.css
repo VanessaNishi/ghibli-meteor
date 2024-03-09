@@ -20,9 +20,150 @@ body {
 }
 
 /* Define custom styles */
-.gray-background {
-  background-color: var(--matr-navbar-bg);
-  color: var(--bs-dark);
-  padding-top: 10px;
-  padding-bottom: 20px;
+#TopMenu {
+  background-color: #38527B;
+}
+
+a.nav-link{
+  position: relative;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+a.nav-link:hover{
+  position: relative;
+  color: #d0e1e7;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+}
+
+a.nav-link::after{
+  position: absolute;
+  content: '';
+  background-color: #d0e1e7;
+  height: 1px;
+  width: 84%;
+  left: 8px;
+  bottom: 8px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+
+a.nav-link:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+#bag {
+  font-size: 25px;
+  color: white;
+  transition: 0.3s;
+}
+
+#bag:hover {
+  color: #d0e1e7;
+  transform: scale(1.2)
+}
+
+#bag::after {
+  height: 0;
+}
+
+#zero {
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+}
+
+#zero:after {
+  height: 0;
+}
+
+.myFooter {
+  background-color: #38527B;
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+}
+
+.bottomLinks {
+  text-decoration: none;
+  font-size: 13px;
+  color: #b4b8c1;
+}
+
+.bottomLinks:hover {
+  color: white;
+  text-decoration-color: white;
+  text-decoration-line: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.signup {
+  font-size: 13px;
+  color: #b4b8c1;
+}
+
+input {
+  color: white;
+  font-size: 13px;
+  background-color: #192943;
+  border: 0;
+  width: 280px;
+  padding: 10px 10px 10px 20px;
+}
+
+::placeholder {
+  font-size: 13px;
+  color: lightgray;
+  margin-top: 10px;
+}
+
+.myButton {
+  border-radius: 0;
+  border: 0;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 35px 11px 35px;
+  margin-left: 10px;
+  height: 40px;
+}
+
+.myButton:hover {
+  color: white;
+  background-color: black;
+}
+
+.icons {
+  font-size: 35px;
+  padding-right: 15px;
+  color: white;
+}
+
+.icons:hover {
+  color: deepskyblue;
+}
+
+#bottomFooter {
+  background-color: #192943;
+  font-size: 13px;
+  color: #b4b8c1;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+#movies {
+  padding-left: 70px;
+  padding-right: 70px;
 }
